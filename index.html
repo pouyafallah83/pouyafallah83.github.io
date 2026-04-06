@@ -1,79 +1,139 @@
 <!--
 Name: Pouya Fallah Saee
 Student Number: 220800660
-Assignment 02 - Personal Website
 -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pouya Fallah Saee | Personal Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #0f172a, #111827, #1e293b);
-      color: #e5e7eb;
-      margin: 0;
-    }
-    header {
-      text-align: center;
-      padding: 50px 20px;
-    }
-    h1 { font-size: 2.5rem; }
-    section {
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
-    }
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      margin: 15px 0;
-      border-radius: 10px;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #020617;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pouya Fallah Saee</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+
+body{
+font-family:Arial;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+color:white;
+}
+
+nav{
+position:fixed;
+width:100%;
+top:0;
+background:#020617;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+header{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding-top:60px;
+}
+
+img{
+width:180px;
+height:180px;
+border-radius:50%;
+border:3px solid #38bdf8;
+object-fit:cover;
+}
+
+h1{font-size:40px;margin-top:15px;}
+h2{color:#38bdf8;margin:10px 0;}
+
+button{
+padding:10px 20px;
+margin:10px;
+border:none;
+border-radius:20px;
+background:#38bdf8;
+cursor:pointer;
+}
+
+section{
+padding:60px 20px;
+max-width:900px;
+margin:auto;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+margin:20px 0;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+}
+</style>
+
 </head>
+
 <body>
 
-<header>
-  <h1>Pouya Fallah Saee</h1>
-  <p>Student Number: 220800660</p>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<header id="home">
+<img src="profile.jpg">
+<h1>Pouya Fallah Saee</h1>
+<h2>AI & IT Student</h2>
+<p>Passionate about Artificial Intelligence, programming, and web development.</p>
+<button onclick="location.href='#about'">Explore</button>
 </header>
 
-<section>
-  <div class="card">
-    <h2>About Me</h2>
-    <p>I am a student learning programming, statistics, and web development.</p>
-  </div>
+<section id="about">
+<h2>About Me</h2>
+<div class="card">
+<p>I am an AI & IT student focusing on building real-world skills in programming, problem solving, and technology.</p>
+</div>
+</section>
 
-  <div class="card">
-    <h2>Skills</h2>
-    <ul>
-      <li>Java (OOP)</li>
-      <li>C++</li>
-      <li>HTML & CSS</li>
-      <li>Statistics</li>
-    </ul>
-  </div>
+<section id="skills">
+<h2>Skills</h2>
+<div class="card">Java & OOP</div>
+<div class="card">C++ Programming</div>
+<div class="card">Web Development (HTML & CSS)</div>
+</section>
 
-  <div class="card">
-    <h2>Projects</h2>
-    <ul>
-      <li>Personal Website</li>
-      <li>OOP Assignments</li>
-    </ul>
-  </div>
+<section id="contact">
+<h2>Contact</h2>
+<div class="card">
+<p>Email: pfhs2004@my.yorku.ca</p>
+<p>GitHub: POUYAFALLAH83</p>
+</div>
 </section>
 
 <footer>
-  <p>© 2026 Pouya Fallah Saee</p>
+<p>© 2026 Pouya Fallah Saee</p>
 </footer>
 
 </body>
